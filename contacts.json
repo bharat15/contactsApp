@@ -1,0 +1,2 @@
+//set local storage arr variable values to test application
+localStorage.setItem('arr', JSON.stringify([{"contactName": "kiran", "PhoneNo": "6769678767"},{"contactName": "bharat", "PhoneNo": "9951927777"},{"contactName": "charan", "PhoneNo": "9000376837"},{"contactName": "kishore", "PhoneNo": "9618392759"},{"contactName": "yadgiri", "PhoneNo": "9049352776"},{"contactName": "ravinder", "PhoneNo": "9846520450"}]));

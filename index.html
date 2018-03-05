@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacts App</title>
+	
+	<!-- css files -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+    <link rel="stylesheet" href="css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
+    <!-- //css files -->
+
+    <!-- online-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Philosopher:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+	<!-- //online-fonts -->
+
+</head>
+<body>
+	<h1 class="agile-head">Contacts App</h1>
+	<div class="agile-wi">
+		<!-- logIn Form -->
+		<div class="signin-form">
+		
+	
+			<form id="signin" action="home.html" method="post">
+				<h3>login Now</h3>
+				<p>User Name </p>
+				<input type="text" name="login" id="login" placeholder="" required=""/>
+				<p>Password</p>
+				<input type="password" name="password" id="password" placeholder="" required=""/>	 
+				<input type="checkbox" id="remember_me" name="remember_me" value="">
+				
+				<div class="signin-agileits-bottom"> 
+					
+				<p><a href="newuser.html">New User?</a></p> 					
+
+				</div> 
+
+				<div class="clear"> </div>
+				<input type="submit" name="submit" value="Login">
+				<!--<div class="social-icons">
+					<ul>  
+						<li><a href="#"><span class="icons"><i class="fa fa-facebook" aria-hidden="true"></i></span><span class="text">Facebook</span></a></li> 
+						<li class="twt"><a href="#"><span class="icons"><i class="fa fa-twitter" aria-hidden="true"></i></span><span class="text">Twitter</span></a></li>  
+					</ul> 
+					<div class="clear"> </div>
+				</div>	-->
+			</form>
+		</div>       
+		<!-- //logIn Form -->
+		
+		<!-- Profile-form -->
+			<div class="top-grids">
+				<div class="profile-agile">
+					<h2>Store Contacts Online Safely.</h2>
+					<div class="profile-w3">
+						<img src="images/names.jpg" alt="">
+					</div>
+					<div class="w3layouts"> 
+						<img src="images/contacts.png" alt=" " />
+						<h3>Contacts Quote.</h3>
+						<label class="line"></label>
+						<p>It's very, very dangerous to lose contact with living nature. </p>
+					</div>
+					<!-- <div class="agileits-w3layouts">
+						<div class="w3l">
+							<h4>280</h4>
+							<h5>Contacts </h5>
+						</div>
+						<div class="w3-agile">
+							<h4>475</h4>
+							<h5>Peoples</h5>
+						</div>
+						<div class="clear"></div>
+					</div> -->
+				</div>
+			</div>
+			<!-- //Profile-form -->
+		<div class="clear"></div> 
+</div>
+	
+	<!-- js -->
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+	<script type="text/javascript">
+		$(window).load( function() {
+
+		switch(window.location.protocol) {
+		case 'http:':
+		case 'https:':
+		// running on a server, should be good.
+		break;
+		case 'file:':
+		alert('Just a heads-up, events will not work when run locally.');
+		}
+
+		});
+	</script>		
+	<!-- //js -->	
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+
+
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Daily Contacts</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Classy User Ui Kit Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+
+<!-- css files -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+<link rel="stylesheet" href="css/monthly.css">	<!-- Calender-CSS -->
+<link rel="stylesheet" href="css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
+<!-- //css files -->
+
+<!-- online-fonts -->
+<link href="//fonts.googleapis.com/css?family=Philosopher:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+<!-- //online-fonts -->
+
+</head>
+<body>
+	<h1 class="agile-head">Daily Contacts</h1>
+	<div class="agile-wi">
+		<!-- logIn Form -->
+		<div class="signin-form">
+			<form id="signin" action="adddata.php" method="post">
+				<h3>Welcome to Daily Contacts</h3>
+				<p>Add Your Contacts</a>
+				<p>Contacts Name </p>
+				<input name="user_id" id="user_id" type="hidden" value="18" />
+				<input type="text" name="name" id="name" placeholder="" />
+				<p>Email</p>
+				<input type="text" name="email" id="email" placeholder="" />	
+<p>Mobile</p>
+				<input type="text" name="mobile" id="mobile" placeholder="" maxlength="10"/>
+<p>Address</p>
+				<input type="text" name="address" id="address" placeholder="" />				
+			
+			<p>Contact Type</p>
+			<select type="text" name="type" id="type" placeholder="" />
+			<option value="">--Select--</option>
+			<option value="Client">Client</option>
+			<option value="Employee">Employee</option>	
+			<option value="Patient">Patient</option>
+<option value="Family">Family</option>			
+<option value="New-Contact">New-Contacts</option>	
+<option value="Others">Other-Contacts</option>		
+
+
+</select>
+				<div class="signin-agileits-bottom"> 
+					<p></p>
+				</div> 
+				
+				<div class="clear"> </div>
+				<input type="submit" name="submit" value="Add Data">
+			
+			</form>
+		</div>       
+		<!-- //logIn Form -->
+		
+		<!-- Profile-form -->
+			<div class="top-grids">
+				<div class="profile-agile">
+					<h2>Your Profile Data</h2>
+					<div class="profile-w3">
+						<img src="images/bgp.jpg" alt="">
+					</div>
+					<div class="w3layouts"> 
+						<img src="images/contacts.png" alt=" " />
+						<h3>Welcome</h3>
+						<label class="line"></label>
+						<p>chintu</p>
+						<label class="line"></label>
+						
+						<p><a href="contacts.php" align="left"><font color="white">Check Your Contacts</font></a></p>
+						<p><a href="bulksms.php" align="left"><font color="white">Bulk SMS</font></a></p>
+					</div>
+					<!-- <div class="agileits-w3layouts">
+						<div class="w3l">
+						
+							<h4>280</h4>
+							<h5>Contacts</h5>
+						</div>
+						<div class="w3-agile">
+							<h4>475</h4>
+							<h5>Have your Contacts.</h5>
+						</div>
+						<div class="clear"></div>
+						
+						
+						
+					</div> -->
+					<div class="profile-agile">
+								
+					<p><a href="logout.php"><font color="white">Logout</a></p> 
+					</div>
+				</div>
+			</div>
+			<!-- //Profile-form -->
+		<div class="clear"></div> 
+
+</div>
+	
+	<!-- js -->
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+	<script type="text/javascript">
+		$(window).load( function() {
+
+		switch(window.location.protocol) {
+		case 'http:':
+		case 'https:':
+		// running on a server, should be good.
+		break;
+		case 'file:':
+		alert('Just a heads-up, events will not work when run locally.');
+		}
+
+		});
+	</script>	
+	<!-- //js -->	
+</body>
+</html>
