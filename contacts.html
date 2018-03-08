@@ -1,94 +1,121 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
    <head>
-      <title>
-         My Contacts
-      </title>
-      <style>
-         li {
-         float: left;
-         display: inline-block;
-         font-family: courier;
-         font-size: 150%;
-         }
-         ul li span:first-child {
-         width: 400px;
-         display: inline-block;
-         }
-         ul li span{
-         font-size: 90%;
-         }
-         .search-container {
-         float: right;
-         }
-         .search-container button:hover {
-         background: #ccc;
-         }
-      </style>
+      <title>Daily Contacts</title>
+      <!-- Meta tag Keywords -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="keywords" content="Classy User Ui Kit Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+      <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+         function hideURLbar(){ window.scrollTo(0,1); }
+      </script>
+      <!-- Meta tag Keywords -->
+      <!-- css files -->
+      <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+      <!-- Style-CSS -->
+      <link rel="stylesheet" href="css/monthly.css">
+      <!-- Calender-CSS -->
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <!-- Font-Awesome-Icons-CSS -->
+      <!-- //css files -->
+      <!-- online-fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Philosopher:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+      <!-- //online-fonts -->
    </head>
-   <body onload=load()>
-      <h1 class="text-center" style="color:blue; font-family: Impact;"> This is Contacts Page </h1>
-      <div class="container">
-         <div class="jumbotron">
-            <div class="search-container">
-               <form  id="search" onsubmit="return false;">
-                  <input type="text" placeholder="Search.." name="search">
-                  <button type="submit"><i class="glyphicon glyphicon-search"></i></button>
+   <body>
+      <h1 class="agile-head">Contacts App</h1>
+      <div class="agile-wi">
+         <!-- logIn Form -->
+         <div class="signin-form">
+            <h3>Added Contacts</h3>
+            <div class="tab-pane active" id="red" style="overflow:auto">
+               <table width="350" bgcolor="white" border="1">
+                  <tr bgcolor="white" width="100">
+                     <th>Name</th>
+                     <th>Mobile</th>
+                  </tr>
+                  <tr>
+                     <td width="200" font color="black">kiran</td>
+                     <td width="100"><a href="tel:4658746574">4658746574</a></td>
+                     <td><a href='delete.php?contact_id="38"'><font color='red'><b>Delete</b></font></a></td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <!-- //logIn Form -->
+         <!-- Profile-form -->
+         <div class="top-grids">
+            <div class="profile-agile">
+               <h2>Contacts</h2>
+               <div class="profile-w3">
+                  <a href="home.php"><font color="white">Home</font></a>
+               </div>
+               <div class="w3layouts">
+               </div>
+               <div class="agileits-w3layouts">
+                  Check Contacts
+                  <form action="" method="POST">
+                     <select name="option_chosen">
+                        <option>-- Select Type --</option>
+                        <option value=""></option>
+                        <option value="family">family</option>
+                        <option value="client">client</option>
+                        <option value="newcontact">newcontact</option>
+                        <option value="employee">employee</option>
+                        <option value="Others">Others</option>
+                        <option value="New-Contact">New-Contact</option>
+                     </select>
+                     <input type="submit" value="Submit" />
+                  </form>
+                  </br>
+                  <table border="2" id="table">
+                     <tr>
+                        <th width="150">Name</th>
+                        <th width="70">Mobile</th>
+                     </tr>
+                  </table>
+                  <p></br></p>
+                  <div class="clear"></div>
+               </div>
+               <div class="profile-agile">
+                  <p><a href="logout.php"><font color="white">Logout</font></a></p>
+               </div>
+            </div>
+         </div>
+         <!-- //Profile-form -->
+         <!-- calendar -->
+         <div class="top-grids-3">
+            <div class="w3l-calendar-left w3-agile-width">
+               <h3>Search Contact</h3>
+               <form action="" method="post">
+                  <font color="yellow">Search:</font> <input type="text" name="term" /><br />
+                  <input type="submit" value="Search" />
                </form>
-            </div>
-            </br> </br>
-            <form id="contacts" onsubmit="return false;">
-               <div class="form-group">
-                  <label for="name">Enter Contact Name:</label>
-                  <input type="text" required id="name" class="form-control" />
-               </div>
-               <div class="form-group">
-                  <label for="Num">Enter Mobile number</label>
-                  <input type="text" required id="Num" class="form-control" pattern="^[+]?[0-9]{10}$" />
-               </div>
-               <button type="submit" class="btn btn-default">Add Contact</button>
-            </form>
-         </div>
-         <div class="contacts-row">
-            <ul style="float: left;width: 100%; ">
-               <li style="width:400px; color: blue; font-family: Impact;">NAME</li>
-               <li style="color: blue; font-family: Impact;">CONTACTS</li>
-            </ul>
-            <ul id="contactslist" data-toggle="modal" data-target="#myModal" style="float: left;">
-            </ul>
-         </div>
-         <!-- Modal -->
-         <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-               <!-- Modal content-->
-               <div class="modal-content">
-                  <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                     <h4 class="modal-title">EDIT CONTACT</h4>
-                  </div>
-                  <div class="modal-body">
-                     <form id="editContacts" onsubmit="return false;">
-                        <div class="form-group">
-                           <label for="name">Enter Contact Name:</label>
-                           <input type="text" required id="editName" class="form-control" />
-                        </div>
-                        <div class="form-group">
-                           <label for="Num">Enter Mobile number</label>
-                           <input type="text" required id="editNum" class="form-control" pattern="^[+]?[0-9]{10}$" />
-                        </div>
-                        <button type="submit" class="btn btn-default">Update Contact</button>
-                     </form>
-                  </div>
-                  <div class="modal-footer">
-                     <button id="deleteContact" type="button" class="btn btn-default" data-dismiss="modal">Delete Contact</button>
-                  </div>
-               </div>
+               <table border="2" id="table" width="70">
+                  <tr><font color="white"></tr>
+               </table>
             </div>
          </div>
+         <div class="clear"></div>
       </div>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script src="addContacts.js"></script>
+      <!-- js -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+      <!-- <script type="text/javascript">
+         $(window).load( function() {
+
+         switch(window.location.protocol) {
+         case 'http:':
+         case 'https:':
+         // running on a server, should be good.
+         break;
+         case 'file:':
+         alert('Just a heads-up, events will not work when run locally.');
+         }
+
+         });
+      </script> -->
+      <!-- //calendar -->
+      <!-- //js -->
    </body>
 </html>

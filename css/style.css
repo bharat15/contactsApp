@@ -93,7 +93,7 @@ h1.agile-head {
 .signin-form p {
     font-size: 1em;
     color: #fff;
-    margin: 1.7em 0 0.7em;
+    margin: 1.7em 0 0.7em 0.9em;
     text-align: left;
 }
 /*-- checkbox --*/
@@ -154,14 +154,14 @@ h1.agile-head {
 }
 .signin-form input[type="submit"]:hover {
     background: transparent;
-    color:#2DCC70; 
+    color:#2DCC70;
     transition: 0.5s all ;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
-/*-- //sign in-form --*/ 
+/*-- //sign in-form --*/
 /*-- sign in-bottom --*/
 .signin-agileits-bottom p {
     text-align: center;
@@ -216,7 +216,7 @@ h1.agile-head {
 	border-right: 1px solid #3b5998;
 }
 .social-icons ul li.twt {
-    background-color: #55acee; 
+    background-color: #55acee;
     float: right;
 }
 .social-icons ul li.twt span.icons {
@@ -224,11 +224,11 @@ h1.agile-head {
     border-color: #67b0e8;
 }
 .social-icons ul li:hover {
-    background:#2E4A84;  
+    background:#2E4A84;
 }
 .social-icons ul li.twt:hover{
-    background:#4D9CD8; 
-} 
+    background:#4D9CD8;
+}
 .icons i {
     text-align: center;
     display: inherit;
@@ -253,6 +253,7 @@ h1.agile-head {
     position: absolute;
     top: -71px;
     left: 55;
+    right:69;
 }
 .w3layouts h3 {
     color: #fff;
